@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="design.css" />
+    <script src="pupform.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <header>APPLICATION FOR REPLACEMENT OF LOST/STOLEN IDENTIFICATION CARD</header>     
+      
+      <form name="dataform" 
+      action="https://script.google.com/macros/s/AKfycbxItlHIbRFMCXh-U5RSwgmCHy4X2_T8T04w_m9Vxv1rC_LP2ctr8eAh3Xx2PxLv2I5PgA/exec" 
+      onsubmit="return validateForm()" 
+      method="post" 
+      class="form">
+        <div class="input-box">
+          <label for="Full Name">Full Name </label>
+          <input type="text" id="Full Name" name="Full Name" placeholder="Surname, Given Name Middle Initial">
+        </div>
+
+        <div class="input-box">
+          <label for="Course">Course </label>
+          <input type="text" id="Course" name="Course" placeholder="eg. Bachelor of Science Information Technology">
+        </div>
+
+        <div class="input-box">
+          <label for="College">College </label>
+          <input type="text" id="College" name="College" placeholder="eg. College of Computer Information System">
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label for="Year Level">Year Level </label>
+            <input type="number" id="Year Level" name="Year Level" placeholder="Enter Year Level" required max="4">
+          </div>
+          <div class="input-box">
+            <label for="Date of Lost">Date when you lost your ID </label>
+            <input type="date" id="Date of Lost" name="Date of Lost">
+          </div>
+        </div>
+        
+        <div class="input-box">
+          <label for="Reason">Reason of Lost Identification Card </label>
+          <input type="text" id="Reason" name="Reason" placeholder="Reason of Lost Identification Card ">
+         </div>
+
+          <div class="file-box">
+            <label for="Student Signature">Student's Signature </label>
+            <input type="url" id="Student Signature" name="Student Signature" placeholder="Enter Google Drive link of the document.">
+
+            <label for="ParentGuardian Signature">Parent/Guardian's Signature </label>
+            <input type="url" id="ParentGuardian Signature" name="ParentGuardian Signature" placeholder="Enter Google Drive link of the document.">
+  
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </body>
+</html>
